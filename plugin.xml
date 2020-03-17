@@ -13,12 +13,13 @@
     <!-- ios -->
     <platform name="ios">
         <js-module src="www/SFAuthSession.js" name="SFAuthSession">
-            <runs/>
-            <clobbers target="SFAuthSession" />
+            <clobbers target="window.plugins.SFAuthSession" />
         </js-module>
+
         <config-file target="config.xml" parent="/*">
             <feature name="SFAuthSession">
                 <param name="ios-package" value="SFAuthSession" />
+                <param name="onload" value="true" />
             </feature>
         </config-file>
 

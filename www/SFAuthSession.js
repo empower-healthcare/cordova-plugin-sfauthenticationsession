@@ -9,4 +9,14 @@ var SFAuthSession = {
   }
 };
 
-module.exports = SFAuthSession;
+function SFAuthSession() {}
+
+SFAuthSession.install = function () {
+  if (!window.plugins) {
+    window.plugins = {};
+  }
+
+  window.plugins.SFAuthSession = new SFAuthSession();
+  return window.plugins.SFAuthSession;
+};
+cordova.addConstructor(SFAuthSession.install);
