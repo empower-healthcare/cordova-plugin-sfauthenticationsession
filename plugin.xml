@@ -25,5 +25,7 @@
 
         <header-file src="src/ios/SFAuthSession.h" />
         <source-file src="src/ios/SFAuthSession.m" />
+
+        <framework src="AuthenticationServices.framework" weak="true"/>
     </platform>
 </plugin>
