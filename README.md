@@ -40,7 +40,7 @@ SFAuthSession.start(String([custom-scheme]),String([oAuth-URL]),[CallBack-Functi
 
 ```js
 if (parseInt(device.version) >= 11 && device.platform == "iOS"){
-    window.plugins.SFAuthSession.start("customScheme://","https://your-oauth-url",function(data){alert(data)},function(error){alert(error)})
+    SFAuthSession.start("customScheme://","https://your-oauth-url",function(data){alert(data)},function(error){alert(error)})
 }
 ```
 

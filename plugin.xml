@@ -13,7 +13,7 @@
     <!-- ios -->
     <platform name="ios">
         <js-module src="www/SFAuthSession.js" name="SFAuthSession">
-            <clobbers target="window.plugins.SFAuthSession" />
+            <clobbers target="SFAuthSession" />
         </js-module>
 
         <config-file target="config.xml" parent="/*">
